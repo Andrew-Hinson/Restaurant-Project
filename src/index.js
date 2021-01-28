@@ -1,3 +1,4 @@
+import styles from "./styles.css";
 import title from './initial'
 
 function addToPage(){
