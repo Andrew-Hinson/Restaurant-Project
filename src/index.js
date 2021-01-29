@@ -1,5 +1,6 @@
 import styles from "./styles.css";
-import title from './initial';
+import {title} from './initial';
+import {paragraph} from './initial';
 import Picture from './coffeeshop1.jpg';
 const content = document.querySelector('#content')
 
@@ -8,6 +9,8 @@ const content = document.querySelector('#content')
 function mainDiv() {
     const element = document.createElement('div');
     const coffeeshop = new Image();
+    element.setAttribute('id', 'mainContent')
+
     coffeeshop.src = Picture;
     coffeeshop.setAttribute('id', 'mainpic')
 
@@ -16,5 +19,6 @@ function mainDiv() {
 }
 content.appendChild(title())
 content.appendChild(mainDiv())
+content.appendChild(paragraph())
 
 
