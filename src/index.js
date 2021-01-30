@@ -1,24 +1,25 @@
 import styles from "./styles.css";
-import {title} from './initial';
-import {paragraph} from './initial';
-import Picture from './coffeeshop1.jpg';
+import {title, paragraph} from "./initial"
+import Picture from './coffeeshop1.png';
 const content = document.querySelector('#content')
-
-
-
-function mainDiv() {
-    const element = document.createElement('div');
-    const coffeeshop = new Image();
-    element.setAttribute('id', 'mainContent')
-
-    coffeeshop.src = Picture;
-    coffeeshop.setAttribute('id', 'mainpic')
-
-    element.appendChild(coffeeshop);
-    return element;
-}
 content.appendChild(title())
-content.appendChild(mainDiv())
-content.appendChild(paragraph())
+let mainDiv = (() =>  {
+        let appendP = () => {
+            content.appendChild(paragraph())
+        }
+        let appendPic = () => {
+            const coffeeshop = new Image();
+            coffeeshop.src = Picture;
+            coffeeshop.setAttribute('id', 'mainpic')
+            coffeeshop.setAttribute('class', 'full-width')
+            content.appendChild(coffeeshop)
+        }
+    appendPic();
+    appendP();
+    return content;
+})()
+
+
+
 
 
