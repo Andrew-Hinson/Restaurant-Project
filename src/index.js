@@ -1,8 +1,12 @@
 import styles from "./styles.css";
 import {title, paragraph} from "./initial"
 import Picture from './coffeeshop1.png';
+import {tabs} from './tabs';
 const content = document.querySelector('#content')
 content.appendChild(title())
+content.appendChild(tabs())
+
+
 let mainDiv = (() =>  {
         let appendP = () => {
             content.appendChild(paragraph())
