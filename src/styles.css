@@ -17,13 +17,13 @@ h1 {
     border-radius: 10px;
     padding: 1rem;
 }
-.full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90%;
+    margin: 20px auto;
   }
 #tabs {
     list-style: none;
@@ -31,10 +31,10 @@ h1 {
 }
 #tabs li {
     display: inline;
-    padding: 0 10%;
+    padding: 0 5%;
     border: 1px solid #00adb5;
     border-radius: 1rem;
-    margin: 2rem 2rem;
+    margin: 1rem 1rem;
 }
 #tabs li:hover {
     background-color: #00adb5;
