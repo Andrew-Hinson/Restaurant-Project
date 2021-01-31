@@ -8,6 +8,9 @@ body {
 h1 {
     color: #ff5722;
 }
+h2 {
+    color: #ff5722;
+}
 .centered {
     margin: 0 auto;
     text-align: center;
@@ -49,4 +52,18 @@ button:focus {
     color: #303841;
     border: 3px solid #ff5722;
     border-radius: 20px;
+}
+#drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+.drink {
+    border: 2px solid #ff5722;
+    border-radius: 20px;
+    padding: 1em;
+}
+.drink:hover {
+    background-color:#00adb5;
 }
