@@ -20,7 +20,6 @@ const homePage = () => {
         const coffeeshop = new Image();
         coffeeshop.src = Picture;
         coffeeshop.setAttribute('id', 'mainpic')
-        coffeeshop.setAttribute('class', 'full-width')
         return coffeeshop
     }
     const paragraph = () => {
