@@ -1,14 +1,14 @@
 import {tabs} from "./tabs.js"
 
 const headerModule = () => {
-    const content = document.querySelector('#content')
+    const header = document.querySelector('#header')
     const title = () => {
         let title = document.createElement('h1')
         title.setAttribute('class', 'centered')
         title.innerText = 'Lakeside Coffee';
         return title;
     }
-    content.appendChild(title());
-    content.appendChild(tabs());
+    header.appendChild(title());
+    header.appendChild(tabs());
 }
 export { headerModule }
