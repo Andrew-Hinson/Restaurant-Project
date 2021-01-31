@@ -31,13 +31,22 @@ img {
 }
 #tabs li {
     display: inline;
-    padding: 0 5%;
-    border: 1px solid #00adb5;
-    border-radius: 1rem;
     margin: 1rem 1rem;
 }
-#tabs li:hover {
-    background-color: #00adb5;
+button {
+    font-size: 16px;
+    height: 2rem;
+    width: 5rem;
+    background-color: #eeeeee;
+    color: #303841;
+    border: 1px solid #00adb5;
+    border-radius: 20px;
 }
-
-  
+button:hover,
+button:focus {
+    outline: none;
+    background-color: #00adb5;
+    color: #303841;
+    border: 3px solid #ff5722;
+    border-radius: 20px;
+}

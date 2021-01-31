@@ -7,7 +7,13 @@ let tabs = () => {
     let createListItem = (text) => {
         let li = document.createElement('li');
         li.setAttribute('class', 'tab');
-        li.innerText = text
+        let createLiButton = () => {
+            let liButton = document.createElement('button')
+            liButton.setAttribute('id', text)
+            liButton.innerText = text
+            return liButton;
+        }
+        li.appendChild(createLiButton(text))
         return li
     }
     createList()
