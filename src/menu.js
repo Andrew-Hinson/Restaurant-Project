@@ -7,12 +7,6 @@ const menu = () => {
         div.setAttribute('id', 'homePageDiv')
         return div;
     }
-    const title = () => {
-        let title = document.createElement('h1')
-        title.setAttribute('class', 'centered')
-        title.innerText = 'Lakeside Coffee';
-        return title;
-    }
     const appendPic = () => {
         const coffeeshop = new Image();
         coffeeshop.src = Picture;
@@ -25,12 +19,9 @@ const menu = () => {
         const createIcon = () => {
             let icon = document.createElement('i')
             icon.setAttribute('class', 'fas fa-coffee');
-            
         }
     }
     newDiv()
-    div.appendChild(title());
-    div.appendChild(tabs());
     div.appendChild(appendPic());
 }
 
