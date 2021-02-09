@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Library Project
 ## Live site here: [Lakeside Coffee](https://andrew-hinson.github.io/Restaurant-Project/)
 ## The Odin Project "Library"
